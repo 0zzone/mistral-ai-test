@@ -122,7 +122,7 @@ const FormDiscussion = ({profile, discuss}: {profile: User, discuss: (data: {mes
                         <FormItem>
                             <FormLabel>Job Description</FormLabel>
                             <FormControl>
-                                <Textarea placeholder="Describe the job responsibilities and requirements" className="bg-white text-black" {...field} />
+                                <Textarea placeholder="Describe the job responsibilities and requirements" className="bg-white text-black max-h-96 overflow-y-auto resize-none" {...field} />
                             </FormControl>
                             <FormMessage />
                         </FormItem>
