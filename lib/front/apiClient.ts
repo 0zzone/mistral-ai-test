@@ -5,7 +5,7 @@ export class ApiClient {
   private defaultHeaders: Record<string, string>;
 
   constructor(options: ApiClientOptions = {}) {
-    this.baseURL = options.baseURL || "";
+    this.baseURL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000/api";
     this.defaultHeaders = {
       "Content-Type": "application/json",
       ...options.headers,
