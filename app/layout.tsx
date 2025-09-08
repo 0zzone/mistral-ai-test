@@ -28,6 +28,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+
+      <head>
+        <link rel="icon" href="/logo.png" />
+      </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-[100dvw] h-[100dvh] bg-[url('/bg.webp')] bg-cover`}
       >

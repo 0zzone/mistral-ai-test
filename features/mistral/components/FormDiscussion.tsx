@@ -13,11 +13,10 @@ import {
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import {User} from "@/lib/types"
-import { useDiscuss } from "@/features/mistral/hooks"
 
 const formSchema = z.object({
-  title: z.string().min(2, "Job title must be at least 2 characters").max(50, "Job title must be less than 50 characters"),
-  description: z.string().min(2, "Job description must be at least 2 characters").max(500, "Job description must be less than 500 characters"),
+  title: z.string().min(2, "Job title must be at least 2 characters"),
+  description: z.string().min(2, "Job description must be at least 2 characters"),
 })
 
 const FormDiscussion = ({profile, discuss}: {profile: User, discuss: (data: {message: string}) => void}) => {
