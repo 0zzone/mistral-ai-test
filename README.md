@@ -17,6 +17,7 @@ NEXT_PUBLIC_API_URL=http://localhost:3000/api
 
 - `MISTRAL_AI_API_KEY`: Your Mistral AI API key (required)
 - `MISTRAL_AI_MODEL`: The Mistral AI model to use (optional, defaults to "mistral-small-2503")
+- `NEXT_PUBLIC_API_URL`: The API url
 
 To get your Mistral AI API key, visit [Mistral AI Console](https://console.mistral.ai/) and create an account.
 
