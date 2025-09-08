@@ -6,7 +6,7 @@ const mistral = new Mistral({
 
 export const discuss = async (message: string, model: string) => {
     return await mistral.chat.complete({
-      model: model || "mistral-small-latest",
+      model: model,
       messages: [
         {
           content: message,

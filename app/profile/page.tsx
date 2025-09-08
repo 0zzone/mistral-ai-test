@@ -129,7 +129,7 @@ const Page = () => {
                             </h2>
                             <div className="space-y-6">
                                 {user.experiences.map((experience: Experience, index: number) => (
-                                    <div key={index} className="relative border-l-2 border-primary/20 last:border-l-0">
+                                    <div key={index} className="relative">
                                         <div className="bg-white/60 rounded-xl p-6 hover:shadow-md transition-shadow">
                                             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-3">
                                                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white">

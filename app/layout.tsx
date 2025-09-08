@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner"
 
 import NavBar from "@/components/NavBar";
 import { Providers } from "@/lib/providers";
@@ -31,6 +32,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased w-[100dvw] h-[100dvh] bg-[url('/bg.webp')] bg-cover`}
       >
         <Providers>
+          <Toaster position="bottom-right" />
           <NavBar />
           {children}
         </Providers>

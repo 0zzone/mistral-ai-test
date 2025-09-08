@@ -1,5 +1,6 @@
 import { apiClient } from "@/lib/front/apiClient"
+import {APIResponse, MistralAPIResponse} from "@/lib/types"
 
-export const discuss = (data: { postId: string; content: string }) => {
-    return apiClient.post("/discuss", data);
+export const discuss = (data: { message: string }): Promise<APIResponse<MistralAPIResponse>> => {
+    return apiClient.post("/mistral", data);
 }

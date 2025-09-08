@@ -27,3 +27,44 @@ export interface Experience {
   endDate: string;
   description: string;
 }
+
+export interface APIResponse<T> {
+  success: boolean
+  data: T
+}
+
+export interface MistralAPIResponse {
+  id: string;
+  object: string;
+  model: string;
+  usage : {
+    promptTokens: number;
+    completionTokens: number;
+    totalTokens: number;
+  }
+  created: number;
+  choices: {
+    index: number;
+    message: {
+      content: string;
+      prefix: boolean;
+      role: string;
+      toolCalls?: any
+    };
+    finishReason: string;
+  }[];
+}
+
+export interface FinalResponse {
+  coverLetterExample: string;
+  keywordsForResume: string[];
+  keywordsForInterview: string[];
+  improvementAreas: string[];
+  strengths: string[];
+  salaryRange: {
+    min: number;
+    max: number;
+    currency: string;
+  };
+  matchingPercentage: number;
+}

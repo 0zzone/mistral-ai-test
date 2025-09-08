@@ -13,7 +13,6 @@ export const mockProfile = {
         "PostgreSQL",
         "Python",
         "Prisma",
-        "Docker",
         "Next.js",
         "Git"
     ],
