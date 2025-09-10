@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/sonner"
+import { Analytics } from "@vercel/analytics/next"
 
 import NavBar from "@/components/NavBar";
 import { Providers } from "@/lib/providers";
@@ -40,6 +41,7 @@ export default function RootLayout({
           <Toaster position="bottom-right" />
           <NavBar />
           {children}
+          <Analytics />
         </Providers>
       </body>
     </html>
